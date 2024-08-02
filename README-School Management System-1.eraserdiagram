@@ -1,0 +1,67 @@
+entity-relationship-diagram
+
+title School Management System
+students [icon: user, color: yellow]{
+  id string pk
+  name string
+  admissionDate date
+  attendance string
+  personalInfo string
+  academicHistory string
+  healthRecords string
+  classId string fk
+}
+
+teachers [icon: user-check, color: green]{
+  id string pk
+  name string
+  qualifications string
+  schedule string
+  attendance string
+  classId string fk
+}
+
+classes [icon: book-open, color: blue]{
+  id string pk
+  name string
+  timetable string
+  resources string
+}
+
+exams [icon: file-text, color: red]{
+  id string pk
+  name string
+  schedule string
+  classId string fk
+}
+
+grades [icon: award, color: purple]{
+  id string pk
+  studentId string fk
+  examId string fk
+  grade string
+  reportCard string
+}
+
+fees [icon: dollar-sign, color: orange]{
+  id string pk
+  studentId string fk
+  invoice string
+  paymentStatus string
+}
+
+financialReports [icon: bar-chart, color: grey]{
+  id string pk
+  feeId string fk
+  reportDetails string
+}
+// End of tables
+// define relationships
+students.classId > classes.id
+teachers.classId > classes.id
+exams.classId > classes.id
+grades.studentId > students.id
+grades.examId > exams.id
+fees.studentId > students.id
+financialReports.feeId > fees.id
+
