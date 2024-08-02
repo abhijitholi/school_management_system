@@ -2,7 +2,7 @@
 
 # School Management System
 ## Project Important Links Here
-#### Project Data Moduling Link -> [﻿https://app.eraser.io/workspace/3WRsTo5jGyBb6Rk1gNPC?origin=share](https://app.eraser.io/workspace/3WRsTo5jGyBb6Rk1gNPC?origin=share) 
+#### Project Data Moduling Link -> https://app.eraser.io/workspace/6QZ0j00ZRAPK3LXudDaC?origin=share&elements=839c9a8HaZto42hLpH6XNQ
 ## Project features
 ### 1. Student Management
 - Admissions and Enrollment: Manage student applications, admissions, and enrollments.
